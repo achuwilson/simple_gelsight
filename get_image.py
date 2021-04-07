@@ -18,6 +18,6 @@ class imageReader():
         jpg = self.bytes[a:b+2] # actual image
         self.bytes = self.bytes[b+2:] # other informations
         img = cv2.imdecode(np.frombuffer(jpg, dtype=np.uint8),cv2.IMREAD_COLOR)
-        img = img[50:185, 80:250]
+        #img = img[50:185, 80:250]
         return img
         
